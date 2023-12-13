@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#weather-data {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#city-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#current-temp, #feels-like {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#weather-desc {
+  margin-bottom: 15px;
+}
+
+#forecast ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#forecast li {
+  margin-bottom: 5px;
+}
+
+#additional-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#additional-info li span {
+  font-weight: bold;
+}
+
+/* Dynamic weather icon based on condition */
+.sunny {
+  background-image: url("images/sun.png");
+}
+
+.cloudy {
+  background-image: url("images/cloud.png");
+}
+
+.rainy {
+  background-image: url("images/rain.png");
+}
+
+.stormy {
+  background-image: url("images/storm.png");
+}
+
+#weather-icon {
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}

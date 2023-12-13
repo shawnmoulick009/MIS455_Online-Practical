@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherWise</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>WeatherWise ☀️☁️❄️</h1>
+
+  <input type="text" id="search-country" placeholder="Search by Country">
+  <button id="search-button">Search</button>
+
+  <div id="weather-data">
+    <h2 id="city-name"></h2>
+    <img id="weather-icon" src="" alt="">
+    <p id="current-temp"></p>
+    <p id="weather-desc"></p>
+    <div id="forecast">
+      <h3>Forecast for the next 3 days:</h3>
+      <ul id="forecast-list"></ul>
+    </div>
+    <div id="additional-info">
+      <h3>Additional Information:</h3>
+      <ul>
+        <li>Feels Like: <span id="feels-like"></span></li>
+        <li>Humidity: <span id="humidity"></span></li>
+        <li>Wind Speed: <span id="wind-speed"></span></li>
+        <li>Sunrise: <span id="sunrise"></span></li>
+        <li>Sunset: <span id="sunset"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <p id="error-message"></p>
+
+  <script src="index.js"></script>
+</body>
+</html>
